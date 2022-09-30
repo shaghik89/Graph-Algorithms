@@ -79,6 +79,7 @@ class graph_features:
         #Checks mathematical consistency
         if G.number_of_edges()==k*(k+1+m)-int(k*(k+1)/2):
             nx.draw(G,with_labels=True)
+            plt.show()
     
 if __name__=='__main__':
     #We pass input as dictionary. Eg : {"a":["b","d"],"b":["c","a","d"],"c":["b","d"],"d":["b","c","a"]}
